@@ -1,0 +1,16 @@
+#type HostelBooking {
+#    id: ID!,
+#    type: String,
+#    status: String,
+#    roomNumber: String,
+#    bookDate: String
+#}
+#type Query {
+#    getBookings(count: Int):[HostelBooking]
+#   getBooking(id: ID):HostelBooking
+#}
+#type Mutation {
+#    createBooking(type: String!, status: String!, roomNumber: String, bookDate: String):HostelBooking
+#    deleteBook(id: ID!) : Boolean
+#    updateBookPageCount(pageCount: Int!, id: ID!) : HostelBooking!
+#}

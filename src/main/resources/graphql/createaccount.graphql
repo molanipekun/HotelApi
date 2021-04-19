@@ -1,0 +1,16 @@
+#type Customer {
+#    id: ID!,
+#    username: String,
+#    firstname: String,
+#    lastname: String,
+#    email: String,
+#    phone:String,
+#    password:String
+#}
+#extend type Query {
+#    getCustomers(count: Int):[Customer]
+#    getCustomer(id: ID):Customer
+#}
+#extend type Mutation {
+#    createCustomer(id: String!, username: String!, firstname: String, lastname: String, email: String, phone: String, password: String):Customer
+#}
